@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <style>
+       h1::before{
+           content: "Hello ";
+           color: burlywood;
+           font-size: 12px;
+           background-color: cornflowerblue;
+       }
+       ul::after{
+           content: "Bye ";
+           font-size: 15px;
+           background-color: cyan;
+       }
+       p::before{
+           counter-increment: section;
+           content: "section" counter(section) ":"
+       }
+       body{
+           counter-reset: section;
+       }
+
+    </style>
+</head>
+<body>
+    <h1>
+        Pseudo Class
+    </h1>
+    <input name="email" type="text">
+    <br><br>
+    <input name="password" type="text">
+    <ul>
+        <p>Maho</p>
+        <p>Adit</p>
+        <p>Ayan</p>
+        <p>Zara</p>
+        <p>Eomma</p>
+        <p>Appa</p>
+    </ul>
+    <a href="google.com">Youtube</a><br>
+    <a href="youtube.com">Google</a>
+
+   
+
+</body>
+</html>
